@@ -52,3 +52,26 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+
+
+
+
+async function fetchPodcasts() {
+    try {
+        const response = await fetch("http://localhost:3000/api/podcasts"); // URL da API
+        const data = await response.json();
+
+        const container = document.getElementById("podcasts-list"); // Elemento onde os dados serão exibidos
+        container.innerHTML = data.map(podcast => `
+            <div>
+                <h3>${podcast.title}</h3>
+                <p>${podcast.description}</p>
+            </div>
+        `).join("");
+    } catch (error) {
+        console.error("Erro ao buscar podcasts:", error);
+    }
+}
+
+fetchPodcasts(); // Chama a função ao carregar a página
