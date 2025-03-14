@@ -3,7 +3,7 @@ const FILES_TO_CACHE = [
   '/',
   '/index.html',
   '/manifest.json',
-  '/icone2/Assets.xcassets/AppIcon.appiconset/196.png',
+  '/icone2/Assets.xcassets/AppIcon.appiconset/192.png',
   '/icone2/Assets.xcassets/AppIcon.appiconset/256.png',
   '/icone2/Assets.xcassets/AppIcon.appiconset/384.png',
   '/icone2/Assets.xcassets/AppIcon.appiconset/512.png'
